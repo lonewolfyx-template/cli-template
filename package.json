@@ -1,0 +1,52 @@
+{
+    "name": "cli-template",
+    "type": "module",
+    "version": "0.0.0",
+    "private": true,
+    "description": "",
+    "bin": {
+        "cli-template": "./dist/index.js"
+    },
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "tsdown --watch",
+        "build": "tsdown",
+        "lint": "eslint",
+        "lint:fix": "eslint --fix"
+    },
+    "keywords": [],
+    "bugs": {
+        "url": "https://github.com/{owner}/{repo}/issues"
+    },
+    "homepage": "https://github.com/{owner}/{repo}",
+    "publishConfig": {
+        "access": "public"
+    },
+    "author": "lonewolfyx <olddrivero.king@qq.com>",
+    "license": "MIT",
+    "dependencies": {
+        "cac": "^6.7.14"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^5.2.1",
+        "@lonewolfyx/tsconfig": "^0.0.5",
+        "@types/node": "^24.2.1",
+        "eslint": "^9.33.0",
+        "lint-staged": "^16.1.5",
+        "simple-git-hooks": "^2.13.1",
+        "tsdown": "^0.14.1",
+        "tsx": "^4.20.4",
+        "typescript": "^5.9.2"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "npx lint-staged"
+    },
+    "lint-staged": {
+        "*": "eslint --fix"
+    }
+}
