@@ -25,6 +25,7 @@
     },
     "homepage": "https://github.com/{owner}/{repo}",
     "publishConfig": {
+        "registry": "https://registry.npmjs.org",
         "access": "public"
     },
     "author": "lonewolfyx <olddrivero.king@qq.com>",
