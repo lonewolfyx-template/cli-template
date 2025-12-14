@@ -4,12 +4,19 @@
     "version": "0.0.0",
     "private": true,
     "description": "",
-    "bin": {
-        "cli-template": "./dist/index.js"
+    "author": "lonewolfyx <olddrivero.king@qq.com>",
+    "license": "MIT",
+    "homepage": "https://github.com/{owner}/{repo}",
+    "bugs": {
+        "url": "https://github.com/{owner}/{repo}/issues"
     },
+    "keywords": [],
     "main": "dist/index.js",
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
+    "bin": {
+        "cli-template": "./dist/index.js"
+    },
     "files": [
         "dist"
     ],
@@ -19,35 +26,37 @@
         "lint": "eslint",
         "lint:fix": "eslint --fix"
     },
-    "keywords": [],
-    "bugs": {
-        "url": "https://github.com/{owner}/{repo}/issues"
-    },
-    "homepage": "https://github.com/{owner}/{repo}",
     "publishConfig": {
         "registry": "https://registry.npmjs.org",
         "access": "public"
     },
-    "author": "lonewolfyx <olddrivero.king@qq.com>",
-    "license": "MIT",
     "dependencies": {
-        "cac": "^6.7.14"
+        "cac": "^6.7.14",
+        "defu": "^6.1.4",
+        "find-up": "^8.0.0",
+        "glob": "^13.0.0",
+        "jiti": "^2.6.1"
     },
     "devDependencies": {
-        "@antfu/eslint-config": "^5.2.1",
-        "@lonewolfyx/tsconfig": "^0.0.5",
-        "@types/node": "^24.2.1",
-        "eslint": "^9.33.0",
-        "lint-staged": "^16.1.5",
+        "@antfu/eslint-config": "^6.7.1",
+        "@lonewolfyx/tsconfig": "^0.0.6",
+        "@types/node": "^25.0.2",
+        "eslint": "^9.39.2",
+        "eslint-plugin-yml": "^1.19.0",
+        "lint-staged": "^16.2.7",
+        "picocolors": "^1.1.1",
         "simple-git-hooks": "^2.13.1",
-        "tsdown": "^0.14.1",
-        "tsx": "^4.20.4",
-        "typescript": "^5.9.2"
+        "tsdown": "^0.17.4",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3",
+        "yaml-eslint-parser": "^1.3.2"
     },
     "simple-git-hooks": {
-        "pre-commit": "npx lint-staged"
+        "pre-commit": "npx lint-staged",
+        "commit-msg": "node scripts/verify-commit.js"
     },
     "lint-staged": {
         "*": "eslint --fix"
-    }
+    },
+    "packageManager": "pnpm@10.15.1"
 }

@@ -4,8 +4,16 @@
         "baseUrl": "./",
         "paths": {
             "@/*": [
-                "./*"
+                "./src/*"
+            ],
+            "#/*": [
+                "./src/types/*",
+                "./types/*"
             ]
-        }
+        },
+        "resolveJsonModule": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "declarationMap": false
     }
 }
