@@ -1,8 +1,7 @@
-// eslint.config.js
+import type { Linter } from 'eslint'
 import antfu from '@antfu/eslint-config'
-import yamlParser from 'yaml-eslint-parser'
 
-export default antfu({
+const config = antfu({
     type: 'lib',
     stylistic: {
         indent: 4,
@@ -16,13 +15,13 @@ export default antfu({
         'vue/valid-template-root': 'off',
         'unused-imports/no-unused-vars': 'off',
         'antfu/top-level-function': 'off',
+        'regexp/no-unused-capturing-group': 'off',
     },
-}, {
-    files: ['**/*.yml', '**/*.yaml'],
-    languageOptions: {
-        parser: yamlParser,
+    yaml: {
+        overrides: {
+            'yaml/indent': ['error', 2],
+        },
     },
-    rules: {
-        'yaml/indent': ['error', 2],
-    },
-})
+}) as Linter.Config
+
+export default config
