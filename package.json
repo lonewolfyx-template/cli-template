@@ -1,5 +1,5 @@
 {
-    "name": "cli-template",
+    "name": "pkg-placeholder",
     "type": "module",
     "version": "0.0.0",
     "private": true,
@@ -7,16 +7,20 @@
     "description": "",
     "author": "lonewolfyx <olddrivero.king@qq.com>",
     "license": "MIT",
-    "homepage": "https://github.com/{owner}/{repo}",
+    "homepage": "https://github.com/lonewolfyx/pkg-placeholder",
     "bugs": {
-        "url": "https://github.com/{owner}/{repo}/issues"
+        "url": "https://github.com/lonewolfyx/pkg-placeholder/issues"
     },
     "keywords": [],
-    "main": "dist/index.js",
-    "module": "dist/index.mjs",
-    "types": "dist/index.d.ts",
+    "exports": {
+        ".": "./dist/index.mjs",
+        "./package.json": "./package.json"
+    },
+    "main": "./dist/index.mjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.mts",
     "bin": {
-        "cli-template": "./dist/index.js"
+        "bin-name": "./dist/index.js"
     },
     "files": [
         "dist"
@@ -25,7 +29,8 @@
         "dev": "tsdown --watch",
         "build": "tsdown",
         "lint": "eslint",
-        "lint:fix": "eslint --fix"
+        "lint:fix": "eslint --fix",
+        "prepublishOnly": "pnpm build"
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org",
