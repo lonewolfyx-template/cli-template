@@ -44,15 +44,14 @@
         "jiti": "^2.6.1"
     },
     "devDependencies": {
-        "@antfu/eslint-config": "^6.7.1",
+        "@antfu/eslint-config": "^6.7.3",
         "@lonewolfyx/tsconfig": "^0.0.6",
-        "@types/node": "^25.0.2",
+        "@types/node": "^25.0.3",
         "eslint": "^9.39.2",
-        "eslint-plugin-yml": "^1.19.0",
         "lint-staged": "^16.2.7",
         "picocolors": "^1.1.1",
         "simple-git-hooks": "^2.13.1",
-        "tsdown": "^0.17.4",
+        "tsdown": "^0.18.2",
         "tsx": "^4.21.0",
         "typescript": "^5.9.3"
     },
