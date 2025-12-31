@@ -30,7 +30,8 @@
         "build": "tsdown",
         "lint": "eslint",
         "lint:fix": "eslint --fix",
-        "prepublishOnly": "pnpm build"
+        "prepublishOnly": "pnpm build",
+        "prepare": "simple-git-hooks"
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org",
