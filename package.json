@@ -19,7 +19,7 @@
     "module": "./dist/cli.mjs",
     "types": "./dist/cli.d.mts",
     "bin": {
-        "bin-name": "./bin/cli.js"
+        "pkg-placeholder": "./bin/cli.js"
     },
     "files": [
         "dist"
