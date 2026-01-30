@@ -2,7 +2,6 @@
     "name": "pkg-placeholder",
     "type": "module",
     "version": "0.0.0",
-    "private": true,
     "packageManager": "pnpm@10.15.1",
     "description": "_description_",
     "author": "lonewolfyx <olddrivero.king@qq.com>",
@@ -13,12 +12,12 @@
     },
     "keywords": [],
     "exports": {
-        ".": "./dist/index.mjs",
+        ".": "./dist/cli.mjs",
         "./package.json": "./package.json"
     },
-    "main": "./dist/index.mjs",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.mts",
+    "main": "./dist/cli.mjs",
+    "module": "./dist/cli.mjs",
+    "types": "./dist/cli.d.mts",
     "bin": {
         "bin-name": "./bin/cli.js"
     },
