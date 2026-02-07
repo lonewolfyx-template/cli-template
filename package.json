@@ -47,7 +47,7 @@
         "@antfu/eslint-config": "^7.3.0",
         "@lonewolfyx/tsconfig": "^0.0.6",
         "@types/node": "^25.2.1",
-        "eslint": "^9.39.2",
+        "eslint": "^10.0.0",
         "lint-staged": "^16.2.7",
         "picocolors": "^1.1.1",
         "simple-git-hooks": "^2.13.1",
