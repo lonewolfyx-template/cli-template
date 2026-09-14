@@ -37,7 +37,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@clack/prompts": "^1.7.0",
+        "@clack/prompts": "^1.8.1",
         "cac": "^6.7.14",
         "defu": "^6.1.7",
         "find-up": "^8.0.0",
@@ -47,7 +47,7 @@
     "devDependencies": {
         "@antfu/eslint-config": "^7.7.3",
         "@lonewolfyx/tsconfig": "^0.0.6",
-        "@types/node": "^25.9.5",
+        "@types/node": "^25.9.6",
         "eslint": "^10.10.0",
         "lint-staged": "^16.4.0",
         "picocolors": "^1.1.1",
