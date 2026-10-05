@@ -2,7 +2,7 @@
     "name": "pkg-placeholder",
     "type": "module",
     "version": "0.0.0",
-    "packageManager": "pnpm@10.34.5",
+    "packageManager": "pnpm@10.34.6",
     "description": "_description_",
     "author": "lonewolfyx <olddrivero.king@qq.com>",
     "license": "MIT",
@@ -47,7 +47,7 @@
     "devDependencies": {
         "@antfu/eslint-config": "^7.7.3",
         "@lonewolfyx/tsconfig": "^0.0.6",
-        "@types/node": "^25.9.8",
+        "@types/node": "^25.9.9",
         "eslint": "^10.11.0",
         "lint-staged": "^16.4.0",
         "picocolors": "^1.1.1",
